@@ -29,6 +29,12 @@ ROWS = [
   ("BST_UK_Carousel_IG_2000","IG post","https://www.instagram.com/p/DIOeAzkvVXX/",url(UKLP,"instagram","uk_carousel_ig")),
   ("BST_UK_Carousel_FB_1500","FB search: one card for all business expenses","",url(UKLP,"facebook","uk_carousel_fb")),
  ]),
+ ("UK additions (2026-07-13) · same campaign 120251291102340127", [
+  ("BST_UK_Slides2_IG_600","IG post","https://www.instagram.com/p/DIJJOB4RdRx/",url(UKLP,"instagram","uk_slides2_ig")),
+  ("BST_UK_Slides2_FB_400","FB post (either): facebook.com/share/p/194rZqeC3d or /share/p/1Cn3vRS1cx","",url(UKLP,"facebook","uk_slides2_fb")),
+  ("BST_UK_JimVideo_IG_900","IG post","https://www.instagram.com/reel/DKyjeu6NkHf/",url(UKLP,"instagram","uk_jimvideo_ig")),
+  ("BST_UK_JimVideo_FB_600","FB search: Jim Vrondas breaks down","",url(UKLP,"facebook","uk_jimvideo_fb")),
+ ]),
  ("MY · campaign 120251291108740127", [
   ("BST_MY_Coffee50k_IG_1200","IG post","https://www.instagram.com/reel/DZkBDcWEVyx/",url(MYLP,"instagram","my_coffee50k_ig")),
   ("BST_MY_Coffee50k_FB_800","FB search: spend can pay you back","",url(MYLP,"facebook","my_coffee50k_fb")),
