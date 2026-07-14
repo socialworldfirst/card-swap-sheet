@@ -61,21 +61,25 @@ ROWS = [
  ]),
 ]
 
-DARK_POST = """<h2>Dark post spec &middot; BST_UK_Slides2_IG_600 (IG, unpublished ad)</h2>
-<p class="sw-lead">Steven is running this ad set as an IG dark post (uploaded creative, not the existing post). Everything below is tailored to the flight goal: landing page views on the UK card page.</p>
+DARK_POST = """<h2>Dark post spec &middot; BST_UK_Slides2_IG_600 &middot; 5-card carousel</h2>
+<p class="sw-lead">IG dark post, 5 cards in THIS order (untick "show best performing cards first", the hero stays card 1). All images 1:1 1080&times;1080. Same CTA + URL on every card; Meta reports per-card pull on its own breakdown.</p>
 <table>
-<tr><th style="width:130px">Field</th><th>Use</th></tr>
-<tr><td class="sw-n">Image</td><td>Crop to <b>1:1 (1080&times;1080)</b> via Edit image &rarr; Crop. The 1080&times;1340 file is neither 1:1 nor exact 4:5 (1080&times;1350), which is what error #2875010 is complaining about. Keep the card + "Save on Every Spend, Everywhere" centred.</td></tr>
-<tr><td class="sw-n">Primary text</td><td>Your business spends every day. World Card gives some of it back: cashback on eligible spend, and no FX fees on international payments. Free with your World Account.</td></tr>
-<tr><td class="sw-n">Headline</td><td>The business card that pays you back</td></tr>
-<tr><td class="sw-n">Headline alt</td><td>Save on every spend, everywhere</td></tr>
-<tr><td class="sw-n">Description</td><td>Cashback on ads, software and supplier payments. Apply free in minutes.</td></tr>
-<tr><td class="sw-n">CTA</td><td>Learn More</td></tr>
-<tr><td class="sw-n">Website URL</td><td><code>https://www.worldfirst.com/uk/product/pay/world-card/?utm_source=instagram&utm_medium=boosted&utm_campaign=card_awareness_jul26&utm_content=uk_slides2_ig</code> <button class="sw-c" data-u="https://www.worldfirst.com/uk/product/pay/world-card/?utm_source=instagram&utm_medium=boosted&utm_campaign=card_awareness_jul26&utm_content=uk_slides2_ig" onclick="navigator.clipboard.writeText(this.dataset.u);this.textContent='copied';setTimeout(()=>this.textContent='copy URL',1200)">copy URL</button></td></tr>
-<tr><td class="sw-n">Identity</td><td>WorldFirst page + @worldfirst Instagram</td></tr>
-<tr><td class="sw-n">Tracking</td><td>Leave the website pixel ON (LPV optimisation needs it)</td></tr>
+<tr><th style="width:210px">Card</th><th>Headline</th><th>Description</th></tr>
+<tr><td class="sw-n">1 &middot; hero "Save on Every Spend, Everywhere"</td><td>The business card that pays you back</td><td>Cashback on eligible spend. Free to get.</td></tr>
+<tr><td class="sw-n">2 &middot; Marketing &amp; Advertising Fees</td><td>Your ad spend, earning back</td><td>Meta, Google and Amazon ads without the FX sting.</td></tr>
+<tr><td class="sw-n">3 &middot; Software Subscriptions</td><td>Your SaaS stack, minus FX fees</td><td>Pay tools in their own currency, earn cashback.</td></tr>
+<tr><td class="sw-n">4 &middot; Shipping &amp; Logistics Costs</td><td>Earn back on every shipment</td><td>Forwarders, freight and last-mile spend that returns.</td></tr>
+<tr><td class="sw-n">5 &middot; Seller Store Fees</td><td>Marketplace fees, working for you</td><td>Amazon, Shopify, TikTok Shop and more.</td></tr>
 </table>
-<p class="sw-lead">Copy notes: "eligible spend" keeps the cashback claim safe until the UK offer wording check clears; no rate numbers on purpose. Same pattern works for the FB Slides2 dark post if you go that route there too.</p>"""
+<table>
+<tr><th style="width:130px">Field</th><th>Use (all cards)</th></tr>
+<tr><td class="sw-n">Primary text</td><td>Your business spends every day. World Card gives some of it back: cashback on eligible spend, and no FX fees on international payments. Free with your World Account.</td></tr>
+<tr><td class="sw-n">CTA</td><td>Learn More</td></tr>
+<tr><td class="sw-n">Website URL</td><td><code>https://www.worldfirst.com/uk/product/pay/world-card/?utm_source=instagram&utm_medium=boosted&utm_campaign=card_awareness_jul26&utm_content=uk_slides2_ig</code> <button class="sw-c" data-u="https://www.worldfirst.com/uk/product/pay/world-card/?utm_source=instagram&utm_medium=boosted&utm_campaign=card_awareness_jul26&utm_content=uk_slides2_fb" onclick="navigator.clipboard.writeText(this.dataset.u.replace('_fb','_ig'));this.textContent='copied';setTimeout(()=>this.textContent='copy URL',1200)">copy URL</button></td></tr>
+<tr><td class="sw-n">Identity</td><td>WorldFirst page + @worldfirst Instagram</td></tr>
+<tr><td class="sw-n">Tracking</td><td>Website pixel ON (LPV optimisation needs it)</td></tr>
+</table>
+<p class="sw-lead">Copy notes: headlines add the mechanism, they never repeat the image text; "eligible spend" keeps cashback safe until the UK offer-wording check clears. FB Slides2 dark post: same 5 cards + copy, swap the URL utm_content to uk_slides2_fb and utm_source to facebook.</p>"""
 
 sections = ""
 for title, rows in ROWS:
