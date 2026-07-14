@@ -79,6 +79,18 @@ DARK_POST = """<h2>Dark post spec &middot; BST_UK_Slides2_IG_600 &middot; 5-card
 <tr><td class="sw-n">Identity</td><td>WorldFirst page + @worldfirst Instagram</td></tr>
 <tr><td class="sw-n">Tracking</td><td>Website pixel ON (LPV optimisation needs it)</td></tr>
 </table>
+<h2>Dark post carousel SET 2 &middot; purple Mastercard series &middot; 4 cards</h2>
+<p class="sw-lead">Second World Card carousel (the FB share-link posts / purple design). Card 1 is portrait: crop 1:1 so the set matches. Same CTA + platform URL as the ad set it goes into.</p>
+<table>
+<tr><th style="width:210px">Card</th><th>Headline</th><th>Description</th></tr>
+<tr><td class="sw-n">1 &middot; "Now Available Worldwide"</td><td>Free with your World Account</td><td>A WorldFirst and Mastercard business card.</td></tr>
+<tr><td class="sw-n">2 &middot; "Save Big with Cashback"</td><td>Every purchase gives back</td><td>Cashback rates vary by region. T&amp;Cs apply.</td></tr>
+<tr><td class="sw-n">3 &middot; "One Card for All Business Expenses"</td><td>Ads, freight and fees: one card</td><td>Separate cards per budget, one dashboard.</td></tr>
+<tr><td class="sw-n">4 &middot; "Extensive Currencies, Effortless Savings"</td><td>Zero FX fees in 15 currencies</td><td>Spend in 150+ currencies across 210+ countries.</td></tr>
+</table>
+<table><tr><th style="width:130px">Field</th><th>Use (all cards)</th></tr>
+<tr><td class="sw-n">Primary text</td><td>World Card is now available worldwide. A WorldFirst and Mastercard business card: cashback on eligible purchases, zero FX fees when paying in 15 major currencies from your account balance, accepted wherever Mastercard is.</td></tr>
+<tr><td class="sw-n">CTA + URL</td><td>Learn More + the ad set's UTM URL from the tables above (ig / fb code per platform)</td></tr></table>
 <p class="sw-lead">Copy notes: headlines add the mechanism, they never repeat the image text; "eligible spend" keeps cashback safe until the UK offer-wording check clears. FB Slides2 dark post: same 5 cards + copy, swap the URL utm_content to uk_slides2_fb and utm_source to facebook.</p>"""
 
 FB_DARK = """<h2>FB dark ad specs &middot; per creative</h2>
