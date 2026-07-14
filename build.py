@@ -81,6 +81,20 @@ DARK_POST = """<h2>Dark post spec &middot; BST_UK_Slides2_IG_600 &middot; 5-card
 </table>
 <p class="sw-lead">Copy notes: headlines add the mechanism, they never repeat the image text; "eligible spend" keeps cashback safe until the UK offer-wording check clears. FB Slides2 dark post: same 5 cards + copy, swap the URL utm_content to uk_slides2_fb and utm_source to facebook.</p>"""
 
+FB_DARK = """<h2>FB dark ad specs &middot; per creative</h2>
+<p class="sw-lead">FB "use existing post" cannot attach a proper CTA button + website URL (only link-posts can), so every FB ad set runs as a DARK POST: upload the same media, primary text below (reworked from the organic caption), headline + description, CTA <b>Learn More</b>, and the ad set's UTM URL from the tables above. Pixel ON everywhere.</p>
+<table>
+<tr><th style="width:190px">Creative (FB ad sets)</th><th>Primary text</th><th>Headline</th><th>Description</th></tr>
+<tr><td class="sw-n">Tutorial video<br>(UK + DE/NL/PL)</td><td>Paying in different currencies across markets? World Card brings your business spend into one place: ads, logistics, subscriptions and marketplace fees, with cashback on eligible purchases. Free with your World Account.</td><td>Get your World Card free</td><td>Apply in minutes from your World Account.</td></tr>
+<tr><td class="sw-n">Intro carousel DIOeAzkvVXX<br>(UK + DE/NL/PL)</td><td>Running a global business can be challenging and costly, but it doesn't have to be. Meet World Card: one card for all business expenses, from marketing and advertising to software, seller store fees, shipping and logistics.</td><td>One card for all business expenses</td><td>Cashback on eligible spend. Free to get.</td></tr>
+<tr><td class="sw-n">Slides2 carousel (UK)</td><td colspan="3">Use the 5-card carousel spec above, swap URL utm_source to facebook and utm_content to uk_slides2_fb.</td></tr>
+<tr><td class="sw-n">Jim Vrondas video (UK)</td><td>Jim Vrondas on how World Card gives online sellers faster access to global funds and more control over business spend.</td><td>Hear why sellers use World Card</td><td>Cashback on eligible spend, no FX fees.</td></tr>
+<tr><td class="sw-n">Coffee vs $50k (MY)</td><td>Your business spend can pay you back. Suppliers, restocks, ads: you're spending thousands anyway. World Card gives you cashback on that spend.</td><td>Cashback on business spend</td><td>Check your Malaysia rate.</td></tr>
+<tr><td class="sw-n">$80 dinner (MY)</td><td>Personal cashback is cute. This one counts. Supplier invoices, ad spend, flights: put them on a card that pays you back.</td><td>Business cashback that counts</td><td>See your Malaysia rate.</td></tr>
+<tr><td class="sw-n">Spend funds growth (MY)</td><td>Every expense your business makes could be earning its keep. Stock, software, suppliers, travel: the same spend, finally pulling its weight.</td><td>Let your spend earn its keep</td><td>See what World Card pays back.</td></tr>
+</table>
+<p class="sw-lead">Video files: pull the same cuts used for the IG posts (Frame.io / original renders). The IG ad sets stay "use existing post", IG supports CTA + URL on existing posts fine.</p>"""
+
 sections = ""
 for title, rows in ROWS:
     trs = ""
@@ -94,6 +108,7 @@ for title, rows in ROWS:
 inner = f"""<div class="sw-wrap"><h1>Card boosts · swap sheet</h1>
 <p class="sw-lead">Per ad set: open the ad, "use existing post" (IG via link, FB via the search phrase), set CTA to <b>Learn More</b>, paste the Website URL, delete the zzPLACEHOLDER ad. All campaigns PAUSED until activation. Envelope US$25,000 to 31 Jul.</p>
 {sections}\n{DARK_POST}
+{FB_DARK}
 <p class="sw-foot">MY + EEA URLs point at regional homepages until card LPs are confirmed. <a href="#" onclick="localStorage.removeItem('card_swap_pw');location.reload();return false;">lock device</a></p></div>"""
 
 payload_json = json.dumps(encrypt_payload(inner))
