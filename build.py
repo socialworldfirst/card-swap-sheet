@@ -61,6 +61,22 @@ ROWS = [
  ]),
 ]
 
+DARK_POST = """<h2>Dark post spec &middot; BST_UK_Slides2_IG_600 (IG, unpublished ad)</h2>
+<p class="sw-lead">Steven is running this ad set as an IG dark post (uploaded creative, not the existing post). Everything below is tailored to the flight goal: landing page views on the UK card page.</p>
+<table>
+<tr><th style="width:130px">Field</th><th>Use</th></tr>
+<tr><td class="sw-n">Image</td><td>Crop to <b>1:1 (1080&times;1080)</b> via Edit image &rarr; Crop. The 1080&times;1340 file is neither 1:1 nor exact 4:5 (1080&times;1350), which is what error #2875010 is complaining about. Keep the card + "Save on Every Spend, Everywhere" centred.</td></tr>
+<tr><td class="sw-n">Primary text</td><td>Your business spends every day. World Card gives some of it back: cashback on eligible spend, and no FX fees on international payments. Free with your World Account.</td></tr>
+<tr><td class="sw-n">Headline</td><td>The business card that pays you back</td></tr>
+<tr><td class="sw-n">Headline alt</td><td>Save on every spend, everywhere</td></tr>
+<tr><td class="sw-n">Description</td><td>Cashback on ads, software and supplier payments. Apply free in minutes.</td></tr>
+<tr><td class="sw-n">CTA</td><td>Learn More</td></tr>
+<tr><td class="sw-n">Website URL</td><td><code>https://www.worldfirst.com/uk/product/pay/world-card/?utm_source=instagram&utm_medium=boosted&utm_campaign=card_awareness_jul26&utm_content=uk_slides2_ig</code> <button class="sw-c" data-u="https://www.worldfirst.com/uk/product/pay/world-card/?utm_source=instagram&utm_medium=boosted&utm_campaign=card_awareness_jul26&utm_content=uk_slides2_ig" onclick="navigator.clipboard.writeText(this.dataset.u);this.textContent='copied';setTimeout(()=>this.textContent='copy URL',1200)">copy URL</button></td></tr>
+<tr><td class="sw-n">Identity</td><td>WorldFirst page + @worldfirst Instagram</td></tr>
+<tr><td class="sw-n">Tracking</td><td>Leave the website pixel ON (LPV optimisation needs it)</td></tr>
+</table>
+<p class="sw-lead">Copy notes: "eligible spend" keeps the cashback claim safe until the UK offer wording check clears; no rate numbers on purpose. Same pattern works for the FB Slides2 dark post if you go that route there too.</p>"""
+
 sections = ""
 for title, rows in ROWS:
     trs = ""
@@ -73,7 +89,7 @@ for title, rows in ROWS:
 
 inner = f"""<div class="sw-wrap"><h1>Card boosts · swap sheet</h1>
 <p class="sw-lead">Per ad set: open the ad, "use existing post" (IG via link, FB via the search phrase), set CTA to <b>Learn More</b>, paste the Website URL, delete the zzPLACEHOLDER ad. All campaigns PAUSED until activation. Envelope US$25,000 to 31 Jul.</p>
-{sections}
+{sections}\n{DARK_POST}
 <p class="sw-foot">MY + EEA URLs point at regional homepages until card LPs are confirmed. <a href="#" onclick="localStorage.removeItem('card_swap_pw');location.reload();return false;">lock device</a></p></div>"""
 
 payload_json = json.dumps(encrypt_payload(inner))
